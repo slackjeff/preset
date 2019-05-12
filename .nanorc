@@ -1,0 +1,26 @@
+# Slackjeff nano Preset ;)
+#===========================
+
+# Habilita ajuste suave de linhas compridas
+set softwrap
+
+# Número de tabs
+set tabsize 4
+
+# Desabilita a inserção de última linha
+set nonewlines
+
+# Desabilita modo de ajuda.
+set nohelp
+
+# Mostra informações (col/line/cursor)
+set constantshow
+
+# Auto Identação
+set autoindent
+
+# Tab para backspace
+set tabstospaces
+
+# Múltiplos buffers por padrão
+set multibuffer
