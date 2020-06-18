@@ -4,23 +4,33 @@
 # Habilita ajuste suave de linhas compridas
 set softwrap
 
-# Número de tabs
+# Nï¿½mero de tabs
 set tabsize 4
 
-# Desabilita a inserção de última linha
+# Desabilita a insercaoo de ultima linha
 set nonewlines
 
 # Desabilita modo de ajuda.
 set nohelp
 
-# Mostra informações (col/line/cursor)
+# Mostra informacoes (col/line/cursor)
 set constantshow
 
-# Auto Identação
+# Auto Identacao
 set autoindent
 
 # Tab para backspace
 set tabstospaces
 
-# Múltiplos buffers por padrão
+# Multiplos buffers por padrao
 set multibuffer
+
+# set element fgcolor,bgcolor
+
+set titlecolor brightgreen,black
+
+set statuscolor brightgreen,black
+
+set keycolor cyan
+
+set functioncolor brightgreen
