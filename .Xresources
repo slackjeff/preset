@@ -1,0 +1,19 @@
+!------- SLACKJEFF xterm.
+! Após modificação executar: 
+!  xrdb -merge ${HOME}/.Xresourses
+
+! Cor de fundo
+xterm*background: black
+
+! Cor do Texto
+xterm*foreground: green
+
+! Tipo da fonte e Tamanho
+xterm*faceName: terminus:pixelsize=25
+
+! Ativar barra de rolagem.
+xterm*rightScrollBar: true
+xterm*ScrollBar: true
+
+! Cursor Piscando
+xterm*cursorBlink: true
