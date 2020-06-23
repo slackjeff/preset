@@ -6,7 +6,7 @@
 xterm*background: black
 
 ! Cor do Texto
-xterm*foreground: green
+xterm*foreground: gray
 
 ! Tipo da fonte e Tamanho
 xterm*faceName: terminus:pixelsize=25
@@ -17,3 +17,6 @@ xterm*ScrollBar: true
 
 ! Cursor Piscando
 xterm*cursorBlink: true
+
+xterm*metaSendsEscape: true
+XTerm*selectToClipboard: true
