@@ -1,8 +1,9 @@
-# Change prompt
+# Prompt conf
 PS1='$ '
 
-# Comp
+# Ativando mais cores =)
 export MAKEFLAGS="-j5"
 
-# Ativando mais cores =)
 alias grep='grep --color=always'
+
+alias ls='ls --color'
