@@ -18,5 +18,8 @@ xterm*ScrollBar: true
 ! Cursor Piscando
 xterm*cursorBlink: true
 
+! Usado no nano ;)
 xterm*metaSendsEscape: true
+
+! C-C C-V
 XTerm*selectToClipboard: true
