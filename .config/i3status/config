@@ -1,1 +1,54 @@
-d
+# i3status configuration file.
+# see "man i3status" for documentation.
+
+# It is important that this file is edited as UTF-8.
+# The following line should contain a sharp s:
+# Ã
+# If the above line is not correctly displayed, fix your editor first!
+
+
+general {
+        colors = true
+        interval = 1
+        color_good = "#f000ff"
+        color_bad = "#383530"
+        output_format = "i3bar"
+}
+
+
+order += "disk /"
+order += "cpu_usage 0"
+order += "ethernet eth1"
+order += "tztime local"
+order += "volume master"
+
+ethernet eth1 {
+        # if you use %speed, i3status requires root privileges
+        format_up = " Net ∴ %ip "
+        format_down = "E: down"
+}
+
+
+tztime local {
+        format = " Hora ◉ %H:%M:%S %d/%m/%y "
+}
+
+load {
+        format = " %1min "
+}
+
+disk "/" {
+        format = " Disco ▚ %avail "
+}
+
+cpu_usage {
+    format = " CPU ▶ %usage "
+}
+
+volume master {
+        format = " Volume ♫ %volume "
+        device = "default"
+        mixer = "Master"
+        mixer_idx = 0
+}
+
