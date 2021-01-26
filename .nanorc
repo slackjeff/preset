@@ -4,11 +4,11 @@
 # Habilita ajuste suave de linhas compridas
 set softwrap
 
-# N�mero de tabs
+# Numero de tabs
 set tabsize 4
 
 # Desabilita a insercaoo de ultima linha
-set nonewlines
+#set nonewlines
 
 # Desabilita modo de ajuda.
 set nohelp
@@ -25,12 +25,21 @@ set tabstospaces
 # Multiplos buffers por padrao
 set multibuffer
 
-# set element fgcolor,bgcolor
+# Mostra linhas no inicio
+set linenumbers
 
-set titlecolor brightgreen,black
+####
+# Cores foreground,background
+####
 
-set statuscolor brightgreen,black
+set titlecolor brightyellow,black
+
+set statuscolor brightcyan,black
 
 set keycolor cyan
 
 set functioncolor brightgreen
+
+set numbercolor brightmagenta,black
+
+set selectedcolor blue
