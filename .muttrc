@@ -1,0 +1,62 @@
+# About Me
+set from = "jeffersoncarneiro@slackjeff.com.br"
+set realname = "Jefferson Carneiro"
+
+# My credentials
+set smtp_url = "smtp://USER@SERVER@mail.slackjeff.com.br:587/"
+set smtp_pass = ""
+set imap_user = "USER@slackjeff.com.br"
+set imap_pass = ""
+
+# My mailboxes
+set folder = "imaps://mail.slackjeff.com.br:993"
+set spoolfile = "+INBOX"
+
+
+# Where to put the stuff
+set header_cache = "~/.mutt/cache/headers"
+set message_cachedir = "~/.mutt/cache/bodies"
+set certificate_file = "~/.mutt/certificates"
+
+# Etc
+set mail_check = 10
+set timeout = 10
+set move = no
+set imap_keepalive = 900
+set sort = threads
+set editor = "nano"
+set signature="~/.signature"
+set arrow_cursor
+
+# Colors
+color hdrdefault cyan 			default	      # Make headers cyan
+color quoted 	 green 			default	      # Quoted
+color signature  red 			default       # Red signatures
+color indicator  brightblack 	cyan	              # Indicator line black on cyan
+color attachment magenta 		default       # Attachments magenta
+color error      brightred 		default	      # Make errors visible
+color status 	 brightyellow 	blue		      # Make Status line bright yellow
+color tree 	 green 	default		              # Threads green
+color normal     white 	default			      # Default white
+color message    brightyellow 	default	              # Not sure what this one is....
+color header 	 brightyellow 	default ^(Subject)    # Yes. Yellow subject line. I like it like that.
+color header     brightcyan		default  "^cc:"
+ 
+color index 	brightyellow 	default "~N"    # New Messages are brighter
+color index 	brightyellow 	default "~U"   	# Set Unread meassager same as ~N
+color index 	brightred 	default "~F"    # These are important messages
+color index 	cyan 		default "~Q"    # Messages i replied to
+color index 	brightwhite default "~G"    # PGP Encrypted Message
+color index 	brightwhite default "~g"    # PGP Signed Message
+color index 	red 		default "~D"    # Deleted Messages
+ 
+ 
+# Highlights inside the body of a message.
+color body 	brightwhite  	default "(http|https|ftp|news|telnet|finger)://[^ \">\t\r\n]*"
+color body 	brightwhite  	default "mailto:[-a-z_0-9.]+@[-a-z_0-9.]+"
+color body 	brightwhite  	default "news:[^ \">\t\r\n]*"
+color body 	brightgreen  	default "[-a-z_0-9.%$]+@[-a-z_0-9.]+\\.[-a-z][-a-z]+"
+color body 	brightblue    	default "<[Gg]>"               # <g>
+color body 	brightblue 		default "<[Bb][Gg]>"           # <bg>
+color body 	brightblue 		default " [;:]-*[)>(<|]"       # :-) etc...
+color body 	brightyellow 	default "\\*[A-Za-z]+\\*"      # *Bold* text.
