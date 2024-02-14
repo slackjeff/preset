@@ -15,14 +15,14 @@ general {
 }
 
 order += "cpu_usage 0"
-order += "ethernet _first_"
+order += "wireless _first_"
 order += "disk /"
 order += "memory"
 order += "tztime local"
 order += "volume master"
 
 wireless _first_ {
-        format_up = "W: (%quality at %essid) %ip"
+        format_up = "📡 (%quality at %essid) %ip"
         format_down = "W: down"
 }
 
@@ -32,25 +32,25 @@ ethernet _first_ {
 }
 
 disk "/" {
-        format = "%avail"
+        format = "💾 %avail"
 }
 
 memory {
-        format = "%used > %available"
+        format = "📏%used/%available"
         threshold_degraded = "1G"
         format_degraded = "MEMORY < %available"
 }
 
 tztime local {
-        format = "%Y-%m-%d %H:%M:%S"
+        format = "📅%d-%m-%Y %H:%M:%S"
 }
 
 cpu_usage {
-    format = " CPU ▶ %usage "
+    format = "💻 %usage"
 }
 
 volume master {
-        format = " Volume ♫ %volume "
+        format = "📀 %volume"
         device = "default"
         mixer = "Master"
         mixer_idx = 0
